@@ -1,0 +1,7 @@
+source https://nuget.org/api/v2
+
+nuget FAKE
+nuget Argu
+nuget xunit
+nuget Unquote
+nuget xunit.runner.console
