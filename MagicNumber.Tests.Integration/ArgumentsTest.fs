@@ -11,4 +11,3 @@ let ``Get Magic Number argument`` () =
     let magicNumber = arguments |> getMagicNumber
 
     test <@ 123 = magicNumber @>
-//    <@ 321 =! magicNumber @>
