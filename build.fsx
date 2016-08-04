@@ -36,7 +36,6 @@ Target ``Run Integration Tests`` (fun _ ->
     |> xUnit2 (fun p ->
         { p with 
             ToolPath =  "packages/xunit.runner.console/tools" @@ "xunit.console.exe"
-            WorkingDir = buildDir |> Some
         }
     )
 )

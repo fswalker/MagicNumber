@@ -17,7 +17,7 @@ let getArguments path =
         let ireader = ConfigurationReader.FromAppSettingsFile (path)
         parser.ParseConfiguration (ireader)
     | None ->
-        parser.Parse ()
+        parser.Parse ([||])
         
 let getMagicNumber (arguments: ParseResults<Arguments>) =
     arguments.GetResult <@ Magic_Number @>
